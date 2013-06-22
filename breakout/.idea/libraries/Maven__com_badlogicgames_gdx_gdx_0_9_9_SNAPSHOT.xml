@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.badlogicgames.gdx:gdx:0.9.9-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/badlogicgames/gdx/gdx/0.9.9-SNAPSHOT/gdx-0.9.9-20130622.014615-65.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/badlogicgames/gdx/gdx/0.9.9-SNAPSHOT/gdx-0.9.9-20130622.014615-65-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/badlogicgames/gdx/gdx/0.9.9-SNAPSHOT/gdx-0.9.9-20130622.014615-65-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

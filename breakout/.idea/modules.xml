@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/breakout.iml" filepath="$PROJECT_DIR$/breakout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/breakout-core.iml" filepath="$PROJECT_DIR$/core/breakout-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/desktop/breakout-desktop.iml" filepath="$PROJECT_DIR$/desktop/breakout-desktop.iml" />
+    </modules>
+  </component>
+</project>
+
