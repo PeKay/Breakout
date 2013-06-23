@@ -53,7 +53,7 @@ public class SplashScreen implements Screen
         batch = new SpriteBatch();
         tweenManager = new TweenManager();
 
-        Texture splashImage = new Texture("assets/img/splashTitle.png");
+        Texture splashImage = new Texture("img/splashTitle.png");
         splash = new Sprite(splashImage);
 
         FadeInAndOut();
@@ -64,7 +64,7 @@ public class SplashScreen implements Screen
         Tween.registerAccessor(Sprite.class, new SpriteAccessor());
 
         Tween.set(splash, SpriteAccessor.ALPHA).target(0).start(tweenManager);
-        Tween.to(splash, SpriteAccessor.ALPHA, 1).target(1).repeatYoyo(1, 1).start(tweenManager).setCallback(new TweenCallback()
+        Tween.to(splash, SpriteAccessor.ALPHA, 1).target(1).repeatYoyo(1, 3).start(tweenManager).setCallback(new TweenCallback()
         {
             @Override
             public void onEvent(int i, BaseTween<?> baseTween)

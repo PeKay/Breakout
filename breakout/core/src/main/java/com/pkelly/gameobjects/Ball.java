@@ -25,13 +25,13 @@ public class Ball extends Sprite
     float cooldownPeriod = .1f;
     float timeRemaning = 0;
 
-    private static Texture ballTexture = new Texture("assets/img/ball.png");
+    private static Texture ballTexture = new Texture("img/ball.png");
 
     public Ball()
     {
         super(ballTexture);
 
-        ballTexture = new Texture("assets/img/ball.png");
+        ballTexture = new Texture("img/ball.png");
 
         setPosition(Gdx.graphics.getWidth() / 2, 120);
     }

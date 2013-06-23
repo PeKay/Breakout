@@ -70,15 +70,15 @@ public class MainMenu implements Screen
 
         Gdx.input.setInputProcessor(stage);
 
-        textureAtlas = new TextureAtlas("assets/ui/button.pack");
+        textureAtlas = new TextureAtlas("ui/button.pack");
 
         skin = new Skin(textureAtlas);
 
         table = new Table(skin);
         table.setBounds(0, 0, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
 
-        white = new BitmapFont(Gdx.files.internal("assets/font/white.fnt"), false);
-        black = new BitmapFont(Gdx.files.internal("assets/font/black.fnt"), false);
+        white = new BitmapFont(Gdx.files.internal("font/white.fnt"), false);
+        black = new BitmapFont(Gdx.files.internal("font/black.fnt"), false);
 
         LabelStyle labelHeading = new LabelStyle(white, Color.WHITE);
         heading = new Label("Breakout", labelHeading);
