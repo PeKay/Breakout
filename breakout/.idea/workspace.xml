@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ad132482-27f8-46f5-8092-39bdf624a8e5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/pkelly/tween/BallAccessor.java" />
-      <change type="MOVED" beforePath="C:\Users\PeKay\Documents\GitHub\Breakout\breakout\core\src\main\java\com\pkelly\gameobjects\paddle.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/pkelly/gameobjects/Paddle.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/com/pkelly/gameobjects/Ball.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/pkelly/gameobjects/Ball.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/com/pkelly/gameobjects/Brick.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/pkelly/gameobjects/Brick.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/com/pkelly/collections/BrickCollection.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/pkelly/collections/BrickCollection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/com/pkelly/gameobjects/GameObject.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/pkelly/gameobjects/GameObject.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/com/pkelly/screens/Play.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/pkelly/screens/Play.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="ad132482-27f8-46f5-8092-39bdf624a8e5" name="Default" comment="" />
     <ignored path="breakout.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/fragment.java" changelist="ad132482-27f8-46f5-8092-39bdf624a8e5" time="1372105305397" ignored="false" />
