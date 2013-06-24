@@ -2,67 +2,46 @@ package com.pkelly.gameobjects;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.badlogic.gdx.math.Vector2;
 
 /**
  * Created with IntelliJ IDEA.
- * User: PeKay
+ * User: paulkelly
  * Date: 23/06/13
- * Time: 00:43
- * To change this template use File | Settings | File Templates.
  */
-public class Paddle extends Sprite
+public class Paddle extends GameObject
 {
-    int targetX;
-
-   public Vector2 velocity = new Vector2(0, 0);
-
-    private static Texture paddleTexture = new Texture("assets/img/brick.png");
+    private static Texture paddleTexture = new Texture("img/paddle.png");
+    private final int FIXED_Y = 30;
 
     public Paddle()
     {
         super(paddleTexture);
 
-        setScale(4, 1);
-        setY(30);
-
-        velocity.limit(10);
-
+        setY(FIXED_Y);
     }
 
     @Override
     public void draw(SpriteBatch spriteBatch)
     {
-        calculateVelocity();
-
-        updatePosition();
+        update();
 
         super.draw(spriteBatch);
     }
 
-    private void calculateVelocity()
+    @Override
+    protected void update()
     {
-        targetX = Gdx.input.getX();
-
-        velocity.x = targetX - getX();
+        setX(Gdx.input.getX() - getWidth() / 2);
     }
 
-
-    public void updatePosition()
+    public void collide(Ball ball)
     {
-        setX(getX() + velocity.x);
 
-        if (getX() < 0)
-        {
-            setX(0);
-            velocity.scl(0);
-        } else if (getX() > Gdx.graphics.getWidth())
-        {
-            setX(Gdx.graphics.getWidth());
-            velocity.scl(0);
-        }
     }
 
+    public void dispose()
+    {
+        getTexture().dispose();
+    }
 }

@@ -16,10 +16,8 @@ import com.pkelly.tween.SpriteAccessor;
 
 /**
  * Created with IntelliJ IDEA.
- * User: PeKay
+ * User: paulkelly
  * Date: 22/06/13
- * Time: 14:53
- * To change this template use File | Settings | File Templates.
  */
 public class SplashScreen implements Screen
 {

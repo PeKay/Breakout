@@ -25,10 +25,8 @@ import com.pkelly.tween.ActorAccessor;
 
 /**
  * Created with IntelliJ IDEA.
- * User: PeKay
+ * User: paulkelly
  * Date: 22/06/13
- * Time: 16:54
- * To change this template use File | Settings | File Templates.
  */
 public class MainMenu implements Screen
 {

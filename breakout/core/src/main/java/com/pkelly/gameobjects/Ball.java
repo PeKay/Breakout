@@ -2,56 +2,38 @@ package com.pkelly.gameobjects;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector2;
 
 /**
  * Created with IntelliJ IDEA.
- * User: PeKay
+ * User: paulkelly
  * Date: 23/06/13
- * Time: 00:00
- * To change this template use File | Settings | File Templates.
  */
-public class Ball extends Sprite
+public class Ball extends GameObject
 {
-    private final Vector2 g = new Vector2(0, -.1f);
-    private final float TERMINAL_VELOCITY = 16;
-    private final float mu = .999f;
-
-    public Vector2 velocity = new Vector2(0, 0);
-
-    boolean cooldown = false;
-    float cooldownPeriod = .1f;
-    float timeRemaning = 0;
+    private final Vector2 GRAVITY_VECTOR = new Vector2(0, 0);
+    private final float TERMINAL_VELOCITY_LENGTH = 16;
+    private final float RESISTANCE = 1;
 
     private static Texture ballTexture = new Texture("img/ball.png");
+
+    boolean isColliding = false;
 
     public Ball()
     {
         super(ballTexture);
 
-        ballTexture = new Texture("img/ball.png");
-
         setPosition(Gdx.graphics.getWidth() / 2, 120);
+        velocity = new Vector2(1.2f, -2.6f);
     }
 
     @Override
-    public void draw(SpriteBatch spriteBatch, float v)
+    public void draw(SpriteBatch spriteBatch)
     {
-        if (cooldown)
-        {
-            if (timeRemaning > 0)
-            {
-                timeRemaning = timeRemaning - v;
-            } else
-            {
-                cooldown = false;
-            }
-        }
         addGravity();
 
-        updatePosition();
+        update();
 
         addResistance();
 
@@ -60,20 +42,20 @@ public class Ball extends Sprite
 
     private void addGravity()
     {
-        velocity.add(g);
+        velocity.add(GRAVITY_VECTOR);
     }
 
     private void addResistance()
     {
-        velocity.scl(mu);
+        velocity.scl(RESISTANCE);
 
-        velocity.limit(TERMINAL_VELOCITY);
+        velocity.limit(TERMINAL_VELOCITY_LENGTH);
     }
 
-    private void updatePosition()
+    @Override
+    protected void update()
     {
-        setX(getX() + velocity.x);
-        setY(getY() + velocity.y);
+        super.update();
 
         if (getX() < 0)
         {
@@ -96,22 +78,39 @@ public class Ball extends Sprite
         }
     }
 
-    public void paddleBounce(Vector2 paddleVelocity)
+    public void collide(Brick brick)
     {
-        if (cooldown) return;
+        if (getCentreX() < brick.getX()) bounceX();
+        if (getCentreX() > brick.getX() + brick.getWidth()) bounceX();
+        if (getCentreY() < brick.getY()) bounceY();
+        if (getCentreY() > brick.getY() + brick.getHeight()) bounceY();
 
-        bounceY();
-        velocity.add(paddleVelocity.x / 2, 0);
-        velocity.scl(1, 1.3f);
-
-        cooldown = true;
-        timeRemaning = cooldownPeriod;
     }
 
-    public void brickBounce()
+    public void collide(Paddle paddle)
     {
-        bounceX();
-        bounceY();
+        if (!isColliding)
+        {
+            isColliding = true;
+            if (getCentreX() < paddle.getX()) bounceX();
+            if (getCentreX() > paddle.getX() + paddle.getWidth()) bounceX();
+            bounceY();
+        }
+    }
+
+    private float getCentreX()
+    {
+        return getX() + (getWidth() / 2);
+    }
+
+    private float getCentreY()
+    {
+        return getY() + (getHeight() / 2);
+    }
+
+    public void stopColliding()
+    {
+        isColliding = false;
     }
 
     private void bounceX()
@@ -122,5 +121,10 @@ public class Ball extends Sprite
     private void bounceY()
     {
         velocity.y = -velocity.y;
+    }
+
+    public void dispose()
+    {
+        getTexture().dispose();
     }
 }
