@@ -1,8 +1,8 @@
 package com.pkelly.gameobjects;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 /**
  * Created with IntelliJ IDEA.
@@ -19,14 +19,16 @@ public class Paddle extends GameObject
         super(paddleTexture);
 
         setY(FIXED_Y);
+
+        Color paddleColor = Color.valueOf("E7DAB7");
+        setColor(paddleColor.r, paddleColor.g, paddleColor.b, 1);
     }
 
     @Override
-    public void draw(SpriteBatch spriteBatch)
+    public void act(float delta)
     {
+        super.act(delta);
         update();
-
-        super.draw(spriteBatch);
     }
 
     @Override
@@ -38,10 +40,5 @@ public class Paddle extends GameObject
     public void collide(Ball ball)
     {
 
-    }
-
-    public void dispose()
-    {
-        getTexture().dispose();
     }
 }

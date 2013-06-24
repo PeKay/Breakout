@@ -1,45 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/desktop/src/main/java/com/pkelly/breakout/java/BreakoutDesktop.java" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="ad132482-27f8-46f5-8092-39bdf624a8e5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/paddle.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/pkelly/gameobjects/Brick.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/pkelly/collections/BrickCollection.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/pkelly/gameobjects/GameObject.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/src/main/java/com/pkelly/tween/BallAccessor.java" />
       <change type="MOVED" beforePath="C:\Users\PeKay\Documents\GitHub\Breakout\breakout\core\src\main\java\com\pkelly\gameobjects\paddle.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/pkelly/gameobjects/Paddle.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/brick.png" afterPath="$PROJECT_DIR$/assets/img/brick.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/com/pkelly/tween/ActorAccessor.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/pkelly/tween/ActorAccessor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/com/pkelly/gameobjects/Ball.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/pkelly/gameobjects/Ball.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/com/pkelly/screens/MainMenu.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/pkelly/screens/MainMenu.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/com/pkelly/gameobjects/Brick.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/pkelly/gameobjects/Brick.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/com/pkelly/collections/BrickCollection.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/pkelly/collections/BrickCollection.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/com/pkelly/gameobjects/GameObject.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/pkelly/gameobjects/GameObject.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/com/pkelly/screens/Play.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/pkelly/screens/Play.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/com/pkelly/screens/SplashScreen.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/pkelly/screens/SplashScreen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/com/pkelly/tween/SpriteAccessor.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/pkelly/tween/SpriteAccessor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="breakout.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/fragment.java" changelist="ad132482-27f8-46f5-8092-39bdf624a8e5" time="1371942154809" ignored="false" />
+    <file path="/fragment.java" changelist="ad132482-27f8-46f5-8092-39bdf624a8e5" time="1372105305397" ignored="false" />
     <file path="/BreakoutDesktop.java" changelist="ad132482-27f8-46f5-8092-39bdf624a8e5" time="1371947753732" ignored="false" />
     <file path="/a.java" changelist="ad132482-27f8-46f5-8092-39bdf624a8e5" time="1371907544185" ignored="false" />
     <file path="/sample.java" changelist="ad132482-27f8-46f5-8092-39bdf624a8e5" time="1371907591806" ignored="false" />
     <file path="/pom.xml" changelist="ad132482-27f8-46f5-8092-39bdf624a8e5" time="1371947515280" ignored="false" />
-    <file path="/Dummy.txt" changelist="ad132482-27f8-46f5-8092-39bdf624a8e5" time="1372023274607" ignored="false" />
+    <file path="/Dummy.txt" changelist="ad132482-27f8-46f5-8092-39bdf624a8e5" time="1372100505413" ignored="false" />
     <file path="/SplashScreen.java" changelist="ad132482-27f8-46f5-8092-39bdf624a8e5" time="1371934747967" ignored="false" />
     <file path="/Breakout.java" changelist="ad132482-27f8-46f5-8092-39bdf624a8e5" time="1371909534928" ignored="false" />
     <file path="/TweenAccessor.java" changelist="ad132482-27f8-46f5-8092-39bdf624a8e5" time="1371913399096" ignored="false" />
     <file path="/SpriteAccessor.java" changelist="ad132482-27f8-46f5-8092-39bdf624a8e5" time="1371914491811" ignored="false" />
-    <file path="/MainMenu.java" changelist="ad132482-27f8-46f5-8092-39bdf624a8e5" time="1371935600823" ignored="false" />
+    <file path="/MainMenu.java" changelist="ad132482-27f8-46f5-8092-39bdf624a8e5" time="1372109522941" ignored="false" />
     <file path="/ActorAccessor.java" changelist="ad132482-27f8-46f5-8092-39bdf624a8e5" time="1371930487275" ignored="false" />
-    <file path="/Play.java" changelist="ad132482-27f8-46f5-8092-39bdf624a8e5" time="1372035744091" ignored="false" />
-    <file path="/Ball.java" changelist="ad132482-27f8-46f5-8092-39bdf624a8e5" time="1372035390529" ignored="false" />
+    <file path="/Play.java" changelist="ad132482-27f8-46f5-8092-39bdf624a8e5" time="1372114832885" ignored="false" />
+    <file path="/Ball.java" changelist="ad132482-27f8-46f5-8092-39bdf624a8e5" time="1372114964437" ignored="false" />
     <file path="/paddle.java" changelist="ad132482-27f8-46f5-8092-39bdf624a8e5" time="1371945340726" ignored="false" />
-    <file path="/GameObject.java" changelist="ad132482-27f8-46f5-8092-39bdf624a8e5" time="1372025573789" ignored="false" />
-    <file path="/Brick.java" changelist="ad132482-27f8-46f5-8092-39bdf624a8e5" time="1372031367249" ignored="false" />
-    <file path="/BrickCollection.java" changelist="ad132482-27f8-46f5-8092-39bdf624a8e5" time="1372034019956" ignored="false" />
-    <file path="/Paddle.java" changelist="ad132482-27f8-46f5-8092-39bdf624a8e5" time="1372036350442" ignored="false" />
+    <file path="/GameObject.java" changelist="ad132482-27f8-46f5-8092-39bdf624a8e5" time="1372113457309" ignored="false" />
+    <file path="/Brick.java" changelist="ad132482-27f8-46f5-8092-39bdf624a8e5" time="1372109294479" ignored="false" />
+    <file path="/BrickCollection.java" changelist="ad132482-27f8-46f5-8092-39bdf624a8e5" time="1372111841356" ignored="false" />
+    <file path="/Paddle.java" changelist="ad132482-27f8-46f5-8092-39bdf624a8e5" time="1372112754882" ignored="false" />
+    <file path="/BallAccessor.java" changelist="ad132482-27f8-46f5-8092-39bdf624a8e5" time="1372113650380" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +47,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -90,7 +84,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -103,7 +96,36 @@
       <file leaf-file-name="Play.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/com/pkelly/screens/Play.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="0" selection-start="1814" selection-end="1814" vertical-scroll-proportion="0.0">
+            <state line="47" column="49" selection-start="1338" selection-end="1338" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShapeRenderer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/badlogicgames/gdx/gdx/0.9.9-SNAPSHOT/gdx-0.9.9-20130622.014615-65-sources.jar!/com/badlogic/gdx/graphics/glutils/ShapeRenderer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="418" column="16" selection-start="15391" selection-end="15391" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BallAccessor.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/pkelly/tween/BallAccessor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="62" selection-start="885" selection-end="885" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainMenu.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/pkelly/screens/MainMenu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="25" selection-start="1121" selection-end="1121" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -112,38 +134,16 @@
       <file leaf-file-name="GameObject.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/com/pkelly/gameobjects/GameObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="34" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Brick.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/pkelly/gameobjects/Brick.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="8" selection-start="354" selection-end="354" vertical-scroll-proportion="0.0">
+            <state line="46" column="68" selection-start="943" selection-end="943" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ball.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/pkelly/gameobjects/Ball.java">
+      <file leaf-file-name="SplashScreen.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/pkelly/screens/SplashScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="58" selection-start="1787" selection-end="1787" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Sprite.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/badlogicgames/gdx/gdx/0.9.9-SNAPSHOT/gdx-0.9.9-20130622.014615-65.jar!/com/badlogic/gdx/graphics/g2d/Sprite.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="17" selection-start="3165" selection-end="3165" vertical-scroll-proportion="-9.64">
+            <state line="34" column="8" selection-start="890" selection-end="913" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -152,7 +152,16 @@
       <file leaf-file-name="BrickCollection.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/com/pkelly/collections/BrickCollection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="1" selection-start="1020" selection-end="1020" vertical-scroll-proportion="0.0">
+            <state line="22" column="34" selection-start="533" selection-end="533" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Brick.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/pkelly/gameobjects/Brick.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="48" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -160,10 +169,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Paddle.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Ball.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/pkelly/gameobjects/Ball.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="89" column="55" selection-start="2037" selection-end="2037" vertical-scroll-proportion="0.6943292">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Paddle.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/com/pkelly/gameobjects/Paddle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="31" selection-start="674" selection-end="674" vertical-scroll-proportion="0.5532504">
+            <state line="31" column="23" selection-start="682" selection-end="682" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -188,22 +206,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/core/src/main/java/com/pkelly/breakout/core/Breakout.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/pkelly/tween/TweenAccessor.java" />
         <option value="$PROJECT_DIR$/core/pom.xml" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/pkelly/gameobjects/paddle.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/desktop/src/main/java/com/pkelly/breakout/java/BreakoutDesktop.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/pkelly/screens/MainMenu.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/pkelly/gameobjects/GameObject.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/pkelly/screens/SplashScreen.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/pkelly/tween/ActorAccessor.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/pkelly/tween/SpriteAccessor.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/pkelly/gameobjects/Brick.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/pkelly/gameobjects/Ball.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/pkelly/gameobjects/Paddle.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/pkelly/gameobjects/GameObject.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/pkelly/tween/BallAccessor.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/pkelly/screens/MainMenu.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/pkelly/screens/Play.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/pkelly/collections/BrickCollection.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/pkelly/gameobjects/Paddle.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/com/pkelly/gameobjects/Ball.java" />
       </list>
     </option>
   </component>
@@ -252,8 +270,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -582,6 +598,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -597,18 +615,21 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.pkelly.gameobjects" />
       <recent name="com.pkelly.tween" />
+      <recent name="com.pkelly.gameobjects" />
       <recent name="com.pkelly.screens" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\PeKay\Documents\GitHub\Breakout\breakout\assets\img" />
@@ -616,9 +637,6 @@
       <recent name="C:\Users\PeKay\Documents\GitHub\Breakout\breakout\core\src\main\resources\assets\img" />
       <recent name="C:\Users\PeKay\Documents\GitHub\Breakout\breakout\core\src\main\resources\assets\font" />
       <recent name="C:\Users\PeKay\Documents\GitHub\Breakout\breakout\core\src\main\resources\assets\ui" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="assets" />
     </key>
   </component>
   <component name="RunManager" selected="Application.BreakoutDesktop">
@@ -652,19 +670,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -690,6 +695,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -772,19 +790,19 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32973504" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32973504" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24493062" sideWeight="0.73503435" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26496565" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26496565" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32973504" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -857,106 +875,53 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/desktop/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="76" selection-start="2430" selection-end="2451" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/desktop/src/main/java/com/pkelly/breakout/java/BreakoutDesktop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="84" selection-start="356" selection-end="356" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/pkelly/breakout/core/Breakout.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.09405256">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/pkelly/tween/SpriteAccessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="121" selection-end="121" vertical-scroll-proportion="0.09405256">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/com/pkelly/tween/ActorAccessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="122" selection-end="122" vertical-scroll-proportion="0.1175657">
+        <state line="32" column="8" selection-start="734" selection-end="978" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/pkelly/screens/SplashScreen.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/aurelienribon/tweenengine/tween-engine-api/6.3.3/tween-engine-api-6.3.3.jar!/aurelienribon/tweenengine/Tween.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="517" selection-end="517" vertical-scroll-proportion="0.1175657">
+        <state line="47" column="50" selection-start="2316" selection-end="2316" vertical-scroll-proportion="0.3452722">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/pkelly/screens/MainMenu.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/badlogicgames/gdx/gdx/0.9.9-SNAPSHOT/gdx-0.9.9-20130622.014615-65-sources.jar!/com/badlogic/gdx/scenes/scene2d/Touchable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="1003" selection-end="1003" vertical-scroll-proportion="0.1175657">
+        <state line="19" column="12" selection-start="922" selection-end="922" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/pkelly/gameobjects/GameObject.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/badlogicgames/gdx/gdx/0.9.9-SNAPSHOT/gdx-0.9.9-20130622.014615-65-sources.jar!/com/badlogic/gdx/scenes/scene2d/Actor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="34" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/badlogicgames/gdx/gdx/0.9.9-SNAPSHOT/gdx-0.9.9-20130622.014615-65.jar!/com/badlogic/gdx/graphics/g2d/Sprite.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="17" selection-start="3165" selection-end="3165" vertical-scroll-proportion="-9.64">
+        <state line="320" column="21" selection-start="12714" selection-end="12714" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/pkelly/screens/Play.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/badlogicgames/gdx/gdx/0.9.9-SNAPSHOT/gdx-0.9.9-20130622.014615-65-sources.jar!/com/badlogic/gdx/scenes/scene2d/ui/Image.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="0" selection-start="1814" selection-end="1814" vertical-scroll-proportion="0.0">
+        <state line="114" column="16" selection-start="3973" selection-end="3973" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/pkelly/gameobjects/Ball.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/badlogicgames/gdx/gdx/0.9.9-SNAPSHOT/gdx-0.9.9-20130622.014615-65-sources.jar!/com/badlogic/gdx/math/Rectangle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="58" selection-start="1787" selection-end="1787" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/pkelly/gameobjects/Brick.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="8" selection-start="354" selection-end="354" vertical-scroll-proportion="0.0">
+        <state line="40" column="11" selection-start="1787" selection-end="1787" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/pkelly/collections/BrickCollection.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/pkelly/tween/BallAccessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="1" selection-start="1020" selection-end="1020" vertical-scroll-proportion="0.0">
+        <state line="36" column="62" selection-start="885" selection-end="885" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -965,7 +930,65 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/com/pkelly/gameobjects/Paddle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="31" selection-start="674" selection-end="674" vertical-scroll-proportion="0.5532504">
+        <state line="31" column="23" selection-start="682" selection-end="682" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/pkelly/gameobjects/GameObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="68" selection-start="943" selection-end="943" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/pkelly/screens/SplashScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="8" selection-start="890" selection-end="913" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/badlogicgames/gdx/gdx/0.9.9-SNAPSHOT/gdx-0.9.9-20130622.014615-65-sources.jar!/com/badlogic/gdx/graphics/glutils/ShapeRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="418" column="16" selection-start="15391" selection-end="15391" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/pkelly/screens/MainMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="25" selection-start="1121" selection-end="1121" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/pkelly/screens/Play.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="49" selection-start="1338" selection-end="1338" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/pkelly/gameobjects/Brick.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="48" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/pkelly/collections/BrickCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="34" selection-start="533" selection-end="533" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/pkelly/gameobjects/Ball.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="55" selection-start="2037" selection-end="2037" vertical-scroll-proportion="0.6943292">
           <folding />
         </state>
       </provider>

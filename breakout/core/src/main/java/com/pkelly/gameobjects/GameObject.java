@@ -1,15 +1,16 @@
 package com.pkelly.gameobjects;
 
 import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.Sprite;
+import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
+import com.badlogic.gdx.scenes.scene2d.ui.Image;
 
 /**
  * Created with IntelliJ IDEA.
  * User: paulkelly
  * Date: 23/06/13
  */
-public class GameObject extends Sprite
+public class GameObject extends Image
 {
     protected Vector2 velocity;
 
@@ -39,6 +40,11 @@ public class GameObject extends Sprite
     public void setVelocity(Vector2 velocity)
     {
         this.velocity = velocity;
+    }
+
+    public Rectangle getBoundingRectangle()
+    {
+        return new Rectangle(getX(), getY(), getWidth(), getHeight());
     }
 
 }

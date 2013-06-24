@@ -1,9 +1,12 @@
 package com.pkelly.gameobjects;
 
+import aurelienribon.tweenengine.Tween;
+import aurelienribon.tweenengine.TweenManager;
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector2;
+import com.pkelly.tween.BallAccessor;
 
 /**
  * Created with IntelliJ IDEA.
@@ -20,24 +23,33 @@ public class Ball extends GameObject
 
     boolean isColliding = false;
 
+    TweenManager tweenManager;
+
     public Ball()
     {
         super(ballTexture);
 
         setPosition(Gdx.graphics.getWidth() / 2, 120);
         velocity = new Vector2(1.2f, -2.6f);
+
+        Color ballColor = Color.valueOf("CAC462");
+        setColor(ballColor.r, ballColor.g, ballColor.b, 1);
+
+        tweenManager = new TweenManager();
     }
 
     @Override
-    public void draw(SpriteBatch spriteBatch)
+    public void act(float delta)
     {
+        super.act(delta);
+
         addGravity();
 
         update();
 
         addResistance();
 
-        super.draw(spriteBatch);
+        tweenManager.update(delta);
     }
 
     private void addGravity()
@@ -57,23 +69,25 @@ public class Ball extends GameObject
     {
         super.update();
 
-        if (getX() < 0)
+        int borderWidth = 5;
+
+        if (getX() < borderWidth)
         {
-            setX(0);
+            setX(borderWidth);
             bounceX();
-        } else if (getX() > Gdx.graphics.getWidth())
+        } else if (getX() > Gdx.graphics.getWidth() - borderWidth)
         {
-            setX(Gdx.graphics.getWidth());
+            setX(Gdx.graphics.getWidth() - borderWidth);
             bounceX();
         }
 
-        if (getY() < 0)
+        if (getY() < borderWidth)
         {
-            setY(0);
+            setY(borderWidth);
             bounceY();
-        } else if (getY() > Gdx.graphics.getHeight())
+        } else if (getY() > Gdx.graphics.getHeight() - borderWidth)
         {
-            setY(Gdx.graphics.getHeight());
+            setY(Gdx.graphics.getHeight() - borderWidth);
             bounceY();
         }
     }
@@ -84,7 +98,6 @@ public class Ball extends GameObject
         if (getCentreX() > brick.getX() + brick.getWidth()) bounceX();
         if (getCentreY() < brick.getY()) bounceY();
         if (getCentreY() > brick.getY() + brick.getHeight()) bounceY();
-
     }
 
     public void collide(Paddle paddle)
@@ -116,15 +129,18 @@ public class Ball extends GameObject
     private void bounceX()
     {
         velocity.x = -velocity.x;
+
+        Tween.registerAccessor(Ball.class, new BallAccessor());
+        Tween.set(this, BallAccessor.SQUASH).target(1.4f, 0.6f).start(tweenManager);
+        Tween.to(this, BallAccessor.SQUASH, 0.3f).target(1, 1).start(tweenManager);
     }
 
     private void bounceY()
     {
         velocity.y = -velocity.y;
-    }
 
-    public void dispose()
-    {
-        getTexture().dispose();
+        Tween.registerAccessor(Ball.class, new BallAccessor());
+        Tween.set(this, BallAccessor.SQUASH).target(1.6f, 0.4f).start(tweenManager);
+        Tween.to(this, BallAccessor.SQUASH, 0.3f).target(1, 1).start(tweenManager);
     }
 }

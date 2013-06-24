@@ -2,10 +2,13 @@ package com.pkelly.screens;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.math.Rectangle;
+import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.pkelly.collections.BrickCollection;
 import com.pkelly.gameobjects.Ball;
 import com.pkelly.gameobjects.Brick;
@@ -21,7 +24,7 @@ public class Play implements Screen
     private final int NUM_ROWS = 8;
     private final int NUM_COLS = 9;
 
-    private SpriteBatch spriteBatch;
+    private Stage stage;
 
     private BrickCollection bricks;
 
@@ -30,13 +33,26 @@ public class Play implements Screen
 
     private Ball ball;
 
+    private SpriteBatch spriteBatch;
+
+    ShapeRenderer shapeRenderer;
+
     @Override
     public void render(float delta)
     {
-        Gdx.gl.glClearColor(0, 0, 0, 1);
+        Color backgroundColour = Color.valueOf("24282C");
+        Gdx.gl.glClearColor(backgroundColour.r, backgroundColour.g, backgroundColour.b, 1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
-        //Collision Detection
+        shapeRenderer.begin(ShapeRenderer.ShapeType.Filled);
+        Color borderColor = Color.valueOf("68725C");
+        shapeRenderer.setColor(borderColor.r, borderColor.g, borderColor.b, 1);
+        shapeRenderer.rect(0, 0, Gdx.graphics.getWidth(), 5);
+        shapeRenderer.rect(0, 0, 5, Gdx.graphics.getHeight());
+        shapeRenderer.rect(0, Gdx.graphics.getHeight() - 5, Gdx.graphics.getWidth(), 5);
+        shapeRenderer.rect(Gdx.graphics.getWidth() - 5, 0, 5, Gdx.graphics.getWidth());
+        shapeRenderer.end();
+
         Rectangle collisionRectangle = new Rectangle(ball.getX() + ball.getVelocity().x, ball.getY() +
                 ball.getVelocity().y, ball.getHeight(), ball.getWidth());
 
@@ -58,16 +74,10 @@ public class Play implements Screen
                 break;
             }
         }
-
         //End Collision Detection
 
-        spriteBatch.begin();
-
-        paddle.draw(spriteBatch);
-
-        bricks.draw(spriteBatch);
-        ball.draw(spriteBatch);
-        spriteBatch.end();
+        stage.act(delta);
+        stage.draw();
     }
 
     @Override
@@ -79,13 +89,19 @@ public class Play implements Screen
     @Override
     public void show()
     {
-        spriteBatch = new SpriteBatch();
+        stage = new Stage();
+
+        shapeRenderer = new ShapeRenderer();
 
         ball = new Ball();
 
         paddle = new Paddle();
 
         bricks = new BrickCollection(NUM_ROWS, NUM_COLS);
+
+        stage.addActor(ball);
+        stage.addActor(paddle);
+        stage.addActor(bricks);
     }
 
     @Override
@@ -109,10 +125,6 @@ public class Play implements Screen
     @Override
     public void dispose()
     {
-        spriteBatch.dispose();
-        paddle.dispose();
-        ball.dispose();
-        bricks.dispose();
-
+        stage.dispose();
     }
 }

@@ -20,7 +20,7 @@ public class BrickCollection extends GameObject
     List<Brick> bricks;
     Texture brickTexture;
 
-    private final int PADDING = 48;
+    private final int PADDING = 55;
     private final int BOTTOM_SPACING = 180;
 
     public BrickCollection(int numRows, int numColumns)
@@ -48,11 +48,11 @@ public class BrickCollection extends GameObject
     }
 
     @Override
-    public void draw(SpriteBatch spriteBatch)
+    public void draw(SpriteBatch spriteBatch, float alpha)
     {
         for (Brick brick : bricks)
         {
-            brick.draw(spriteBatch);
+            brick.draw(spriteBatch, alpha);
         }
 
     }
@@ -75,14 +75,6 @@ public class BrickCollection extends GameObject
     public void removeBrick(Brick brick)
     {
         bricks.remove(brick);
-    }
-
-    public void dispose()
-    {
-        for (Brick brick : bricks)
-        {
-            brick.getTexture().dispose();
-        }
     }
 
 }
