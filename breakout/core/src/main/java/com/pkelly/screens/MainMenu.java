@@ -20,6 +20,8 @@ import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton.TextButtonStyle;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
+import com.google.inject.Inject;
+import com.pkelly.preferences.Options;
 import com.pkelly.tween.ActorAccessor;
 
 
@@ -31,11 +33,20 @@ import com.pkelly.tween.ActorAccessor;
 public class MainMenu implements Screen
 {
 
+    @Inject
+    Play play;
+
+    @Inject
+    private OptionsMenu optionsMenu;
+
+    @Inject
+    private Options options;
+
     private Stage stage;
     private TextureAtlas textureAtlas;
     private Skin skin;
     private Table table;
-    private TextButton exitButton, playButton;
+    private TextButton exitButton, playButton, optionsButton;
     private BitmapFont white, black;
     private Label heading;
 
@@ -97,7 +108,17 @@ public class MainMenu implements Screen
             @Override
             public void clicked(InputEvent event, float x, float y)
             {
-                ((Game) Gdx.app.getApplicationListener()).setScreen(new Play());
+                ((Game) Gdx.app.getApplicationListener()).setScreen(play);
+            }
+        });
+
+        optionsButton = getTextButton("OPTIONS");
+        optionsButton.addListener(new ClickListener()
+        {
+            @Override
+            public void clicked(InputEvent event, float x, float y)
+            {
+                ((Game) Gdx.app.getApplicationListener()).setScreen(optionsMenu);
             }
         });
 
@@ -105,6 +126,8 @@ public class MainMenu implements Screen
         table.getCell(heading).spaceBottom(100);
         table.row();
         table.add(playButton);
+        table.row();
+        table.add(optionsButton);
         table.row();
         table.add(exitButton);
         stage.addActor(table);
@@ -121,11 +144,13 @@ public class MainMenu implements Screen
 
         heading.setColor(heading.getColor().r, heading.getColor().g, heading.getColor().b, 0);
         playButton.setColor(playButton.getColor().r, playButton.getColor().g, playButton.getColor().b, 0);
+        optionsButton.setColor(exitButton.getColor().r, exitButton.getColor().g, exitButton.getColor().b, 0);
         exitButton.setColor(exitButton.getColor().r, exitButton.getColor().g, exitButton.getColor().b, 0);
 
         Timeline timeline = Timeline.createSequence().beginSequence() ;
         timeline.push(Tween.to(heading, ActorAccessor.ALPHA, .2f).target(1));
         timeline.push(Tween.to(playButton, ActorAccessor.ALPHA, .2f).target(1));
+        timeline.push(Tween.to(optionsButton, ActorAccessor.ALPHA, .2f).target(1));
         timeline.push(Tween.to(exitButton, ActorAccessor.ALPHA, .2f).target(1));
         timeline.end();
         timeline.start(tweenManager);

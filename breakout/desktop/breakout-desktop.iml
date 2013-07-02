@@ -10,6 +10,9 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="breakout-core" />
+    <orderEntry type="library" name="Maven: com.google.inject:guice:no_aop:3.0" level="project" />
+    <orderEntry type="library" name="Maven: javax.inject:javax.inject:1" level="project" />
+    <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
     <orderEntry type="library" name="Maven: com.badlogicgames.gdx:gdx:0.9.9-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: aurelienribon.tweenengine:tween-engine-api:6.3.3" level="project" />
     <orderEntry type="library" name="Maven: com.badlogicgames.gdx:gdx-backend-lwjgl:0.9.9-SNAPSHOT" level="project" />

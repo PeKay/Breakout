@@ -1,15 +1,23 @@
 package com.pkelly.breakout.core;
 
 import com.badlogic.gdx.Game;
+import com.google.inject.Inject;
+import com.pkelly.preferences.Options;
 import com.pkelly.screens.SplashScreen;
 
 public class Breakout extends Game
 {
+    @Inject
+    Options options;
+
+    @Inject
+    SplashScreen splashScreen;
 
 	@Override
 	public void create ()
     {
-        setScreen(new SplashScreen());
+        options.load();
+        setScreen(splashScreen);
     }
 
 	@Override

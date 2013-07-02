@@ -12,6 +12,8 @@ import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.google.inject.Inject;
+import com.pkelly.preferences.Options;
 import com.pkelly.tween.SpriteAccessor;
 
 /**
@@ -21,6 +23,12 @@ import com.pkelly.tween.SpriteAccessor;
  */
 public class SplashScreen implements Screen
 {
+    @Inject
+    MainMenu mainMenu;
+
+    @Inject
+    private Options options;
+
     private SpriteBatch batch;
     private Sprite splash;
     private TweenManager tweenManager;
@@ -67,7 +75,7 @@ public class SplashScreen implements Screen
             @Override
             public void onEvent(int i, BaseTween<?> baseTween)
             {
-                ((Game) Gdx.app.getApplicationListener()).setScreen(new MainMenu());
+                ((Game) Gdx.app.getApplicationListener()).setScreen(mainMenu);
             }
         });
     }
